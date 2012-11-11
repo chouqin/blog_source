@@ -20,6 +20,7 @@ tags: [linux]
 ##基本安装
 能够正确引导的话就可以进行安装了，安装的时候我完全是照着Wiki上的[Beginner's Guide](https://wiki.archlinux.org/index.php/Beginners'_Guide)一步步过来的。
 只是有几点需要注意：
+
 * 因为在开始安装基础包的时候需要网络链接，在网络连接的时候我采用的是static IP的有线连接，在设置网络的时候只需要正确设置有线连接即可。
 * 在设置硬盘的时候一定要小心，一般情况下用于安装arch的硬盘已经排到了sda4以后，不要照着Beginner's Guide上面敲sda1等，稍不注意就会把windows给格掉。
 * 在设置mirrorlist时，建议把China的几个server单独选出作为新的mirrorlist文件,这样比较稳定。

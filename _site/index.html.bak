@@ -67,17 +67,9 @@
   
     
       
-    
-  
-    
-      
       	
-      	<li><a href="/categories.html">Categories</a></li>
+      	<li><a href="/archive.html">Archive</a></li>
       	
-      
-    
-  
-    
       
     
   
@@ -85,6 +77,26 @@
       
       	
       	<li><a href="/tags.html">Tags</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/categories.html">Categories</a></li>
       	
       
     
@@ -102,14 +114,6 @@
     
   
     
-      
-    
-  
-    
-      
-      	
-      	<li><a href="/archive.html">Archive</a></li>
-      	
       
     
   
@@ -174,6 +178,22 @@
 
 <!--<ul class="posts">-->
 <!---->
+  <!--<div class="post_info">-->
+    <!--<li>-->
+            <!--<a href="/python/2012/11/11/chinese-encoding">中文编码闲谈</a>-->
+            <!--<span>(2012-11-11)</span>-->
+    <!--</li>-->
+    <!--</br> <em> </em>-->
+    <!--</div>-->
+  <!---->
+  <!--<div class="post_info">-->
+    <!--<li>-->
+            <!--<a href="/Feelings/2012/10/27/feeling">最近的总结与感悟</a>-->
+            <!--<span>(2012-10-27)</span>-->
+    <!--</li>-->
+    <!--</br> <em> </em>-->
+    <!--</div>-->
+  <!---->
   <!--<div class="post_info">-->
     <!--<li>-->
             <!--<a href="/linux/2012/09/14/archlinux-installation">ArchLinux 安装经过</a>-->
