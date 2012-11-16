@@ -5,6 +5,7 @@ description: ""
 category: python
 tags: [python]
 ---
+
 {% include JB/setup %}
 
 作为一个天朝的程序员，总是会在编程的时候与中文打交道。一开始对于编码不是很熟悉，也没有弄明白它里面的原理，

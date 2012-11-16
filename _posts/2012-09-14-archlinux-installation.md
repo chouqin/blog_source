@@ -5,7 +5,9 @@ description: ""
 category: linux
 tags: [linux]
 ---
+
 {% include JB/setup %}
+
 因为实在受不了Ubuntu的更新繁琐，终于还是下定决心安装ArchLinux了。虽说安装起来要比Ubuntu的无脑安装要艰辛许多，
 可是成功之后的除了用起来爽很多之外，这其中的过程也是很有意义的。Arch的好处嘛，除了更新方便之外，源也比Ubuntu的
 要快很多，社区服务用起来也比Ubuntu更加方便。废话不多说，直接说安装过程。

@@ -5,7 +5,9 @@ description: ""
 category: mysql
 tags: [mysql]
 ---
+
 {% include JB/setup %}
+
 这几天好好地研究了一下mysql,认真地看了《High Performance MySQL》的几章，
 才发现，要能够精通mysql真的是一个长期的工程，有效地管理mysql,
 使它能够具有很强的稳定性同时具有很快的相应速度，
