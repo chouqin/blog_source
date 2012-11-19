@@ -29,8 +29,15 @@ title: Blog
     <div class="span4" style="margin-top:20px;">
         <h3>所有分类</h3>
         <ul class="categories">
-            {% assign categories_list = site.categories %}
-            {% include JB/categories_list %}
+        <!--{% for category in site.categories %} -->
+             <!--{{ category.category_links }}-->
+        <!--{% endfor %}-->
+        {% for category in site.categories %}
+        <li><a href="/categories/{{ category[0] }}">{{ category[0] }}</a></li>
+        {% endfor %}
+        <!--{{ site.categories | category_links }}-->
+            <!--{% assign categories_list = site.categories %}-->
+            <!--{% include JB/categories_list %}-->
         </ul>
         <!--{% for category in site.categories %} -->
           <!--<h2 id="{{ category[0] }}-ref">{{ category[0] | join: "/" }}</h2>-->
