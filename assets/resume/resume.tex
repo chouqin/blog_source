@@ -27,6 +27,8 @@
 %%% Custom sectioning (sectsty package)
 %%% ------------------------------------------------------------
 \usepackage{sectsty}							% Custom sectioning (see below)
+\usepackage{enumerate}
+
 
 \sectionfont{%									% Change font of \section command
 	\usefont{OT1}{phv}{b}{n}%					% bch-b-n: CharterBT-Bold font
@@ -50,31 +52,33 @@
 \newcommand{\NewPart}[1]{\section*{\uppercase{#1}}}
 
 \newcommand{\PersonalEntry}[2]{
-		\noindent\hangindent=2em\hangafter=0 		% Indentation
+		\noindent\hangindent=1em\hangafter=0 		% Indentation
 		\parbox{\spacebox}{						% Box to align text
 		\textit{#1}}								% Entry name (birth, address, etc.)
 		\hspace{1.5em} #2 \par}					% Entry value
 
 \newcommand{\SkillsEntry}[2]{						% Same as \PersonalEntry
-		\noindent\hangindent=2em\hangafter=0 		% Indentation
+		\noindent\hangindent=1em\hangafter=0 		% Indentation
 		\parbox{\spacebox}{						% Box to align text
 		\textit{#1}}								% Entry name (birth, address, etc.)
-		\hspace{1.5em} #2 \par}					% Entry value
+		\hspace{1em} #2 \par}					% Entry value
 
 \newcommand{\EducationEntry}[4]{
 		\noindent \textbf{#1} \hfill 					% Study
 		\colorbox{Black}{%
-			\parbox{6em}{%
+			\parbox{8em}{%
 			\hfill\color{White}#2}} \par				% Duration
 		\noindent \textit{#3} \par					% School
-		\noindent\hangindent=2em\hangafter=0 \small #4 	% Description
+		\noindent\hangindent=2em\hangafter=0  #4 	% Description
 		\normalsize \par}
 
 \newcommand{\WorkEntry}[4]{						% Same as \EducationEntry
 		\noindent \textbf{#1} \hfill 					% Jobname
-		\colorbox{Black}{\color{White}#2} \par		% Duration
+		\colorbox{Black}{%
+			\parbox{8em}{%
+			\hfill\color{White}#2}} \par				% Duration
 		\noindent \textit{#3} \par					% Company
-		\noindent\hangindent=2em\hangafter=0 \small #4 	% Description
+		\noindent\hangindent=2em\hangafter=0  #4 	% Description
 		\normalsize \par}
 
 
@@ -90,52 +94,84 @@
 %\end{wrapfigure}
 
 \MyName{李奇平}
-\MySlogan{后端开发工程师}
+\MySlogan{数据挖掘实习生}
 
 \sepspace
 
 %%% Personal details
 %%% ------------------------------------------------------------
-\NewPart{Personal details}{}
+\NewPart{基本信息}{}
 
-\PersonalEntry{Birth}{January 1, 1980}
-\PersonalEntry{Address}{111 First St, New York}
-\PersonalEntry{Phone}{(123) 000-0000}
-\PersonalEntry{Mail}{\url{me@home.com}}
+\PersonalEntry{出生日期}{1991年8月20日}
+\PersonalEntry{地址}{上海市闵行区东川路800号上海交通大学}
+\PersonalEntry{联系电话}{15216709072}
+\PersonalEntry{Email}{\url{liqiping1991@gmail.com}}
+\PersonalEntry{技术博客}{\url{chouqin.github.com}}
 
 %%% Education
 %%% ------------------------------------------------------------
-\NewPart{Education}{}
+\NewPart{教育背景}{}
 
-\EducationEntry{MSc. Name of Education}{2010-2012}{Name of
-  University}{Descriptive text goes here. In order to maintain a stylish look, try to fill this description with a few lines of text. Do the same for the other entries in the education section.}
+\EducationEntry{本科}{2009/09至今}{上海交通大学  计算机科学与技术专业}
+{在此期间修读了公共的数学英语课程和计算机专业的基础课程，平均成绩85分，
+具有外推浙大研究生的资格，将于2013年在浙大继续学习，专业方向为数据挖掘。}
 \sepspace
-
-\EducationEntry{BSc. Name of Education}{2007-2010}{Name of University}{Descriptive text goes here. In order to maintain a stylish look, try to fill this description with a few lines of text. Do the same for the other entries in the education section.}
-
-%%% Work experience
-%%% ------------------------------------------------------------
-\NewPart{Work experience}{}
-
-\EducationEntry{Job name}{2011-present}{Company Name inc., Full-time}{Job description goes here. To maintain a stylish look, try to fill this description with a few lines of text. Do the same for the other entries in this section.}
-\sepspace
-
-\EducationEntry{Job name}{2010-2011}{Company Name inc., Part-time}{Job description goes here. To maintain a stylish look, try to fill this description with a few lines of text. Do the same for the other entries in this section.}
 
 %%% Skills
 %%% ------------------------------------------------------------
-\NewPart{Skills}{}
+\NewPart{职业技能}{}
 
-\SkillsEntry{Languages}{Dutch (mother tongue)}
-\SkillsEntry{}{English (fluent)}
-\SkillsEntry{}{German (fluent)}
+\SkillsEntry{英语水平}{六级562，修过几门英语课程,阅读大量英语文档和教材}
+\SkillsEntry{专业水平}{熟练使用C/C++/php/python/C$\sharp $语言进行编程}
+\SkillsEntry{}{使用Symfony/Django/ASP.NET/WPF等框架开发过网站或应用程序}
+\SkillsEntry{}{熟练掌握linux编程环境及MySQL数据库}
+\SkillsEntry{}{对于数据结构和算法有较深入的了解}
 
-\SkillsEntry{Software}{\textsc{Matlab}, \LaTeX, \textsc{Ansys}, \textsc{Comsol}}
+%%% Work experience
+%%% ------------------------------------------------------------
+\NewPart{实习经历}{}
 
+\EducationEntry{后端开发工程师}{2011/07-2011/12}{饿了么}
+{帮助公司完成了一个餐厅管理的后台(负责web后端)和一些数据统计的工作。
+在这半年时间内学习了和web开发相关的知识，
+学习了php,javascript,css,python这些编程语言，
+学习了mysql数据库的基本操作以及数据库的使用，
+学会了在linux环境下进行开发的基本工具(git, vim等)
+}
+\sepspace
+
+\EducationEntry{IOS开发工程师}{2012/03-2012/06}{上海汇翼信息科技有限公司}
+{开发teambition网站的IOS版本，实现多平台的统一。
+这个项目由我和另外一个同事共同完成，我们的工作分为数据处理和用户界面两部分，相当于web的前端和后端，我主要负责这个产品的用户交互部分，
+包括信息的展示和一些与用户的交互的动画。在这个实习的过程中，我还协助采用node.js技术开发了teambition的文档管理系统。
+}
+\sepspace
+
+\EducationEntry{SDET}{2011/07-2011/09}{微软亚太研发中心}
+{所在小组是WinterOp, 主要完成了以下四个任务
+\begin{enumerate}
+        \item 使用WPF实现一个解密小工具用于解密Kerberos交互协议的各个加密部分
+        \item 给PTF增加打印彩色log的功能
+        \item 写了大量PowerShell脚本用于配置测试环境上的机器
+        \item 使用ASP.NET开发了一个一个用于报告测试结果的网站，网站主要用于展示测试结果，通过一个console应用程序报告测试结果
+\end{enumerate}
+}
+\sepspace
+
+\EducationEntry{后端开发工程师}{2012/09至今}{饿了么}
+{主要负责新版后台的数据统计工作，
+包括数据库表的设计和索引优化，通过python脚本导入数据，
+以及Thrift service的设计与实现等工作。
+}
 
 %%% References
 %%% ------------------------------------------------------------
-\NewPart{References}{}
-Available upon request
+\NewPart{自我评价}{}
+\begin{itemize}
+\item 学习能力较强，能够快速接受新知识
+\item 做事有决心，认准一件事之后会坚持把它完成
+\item 坚信一万小时定律，正在处于自己的一万小时的积累中
+\item 热爱技术，希望能成为一个Linus类型的黑客
+\end{itemize}
 \end{CJK}
 \end{document}
