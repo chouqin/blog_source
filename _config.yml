@@ -5,10 +5,10 @@ permalink: /:categories/:year/:month/:day/:title
 auto: true
 pygments: true
 markdown: kramdown
-#kramdown:
-  #use_coderay: true
-  #coderay:
-    #coderay_css: class
+kramdown:
+  use_coderay: true
+  coderay:
+    coderay_css: class
 #lsi: true
 #exclude: ['README.markdown', 'README_FOR_COLLABORATORS.markdown', 'Gemfile.lock', 'Gemfile']
 production: false
