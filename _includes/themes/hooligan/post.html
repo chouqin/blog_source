@@ -37,8 +37,13 @@
       <section>
         <h4>Category</h4>
         <span class="category">
-             {{ page.categories | category_links }}
-            <!--<a href="/categories/{{ page.category[0] }}">{{ page.category }}</a>-->
+            {{ page.categories | category_links }}
+            <!--<li><a href="/categories/{{ page.category[] }}">{{ page.category[] }}   page.category {{ page.category[] | last | size }}</a></li>-->
+            <!--{% for category in page.category %}-->
+            <!--<li><a href="/categories/{{ category[] }}">{{ page.category[] }}   page.category {{ page.category[] | last | size }}</a></li>-->
+            <!--<li><a href="/categories/{{ category[0] }}">{{ category[0] }} <span> {{ category | last | size }} </span></a></li>-->
+            <!--{% endfor %}-->
+            <!--<a href="/categories/{{ page.category[0] }}">{{ page.category[] }}</a>-->
           <!--{{ page.category }}-->
         </span>
       </section>
