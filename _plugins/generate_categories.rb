@@ -189,6 +189,7 @@ module Jekyll
     def self.category_dir(base_dir, category)
       base_dir = (base_dir || CATEGORY_DIR).gsub(/^\/*(.*)\/*$/, '\1')
       #category = category.gsub(/_|\P{Word}/, '-').gsub(/-{2,}/, '-').downcase
+      #category = category.downcase
       File.join(base_dir, category)
     end
 
@@ -204,24 +205,24 @@ module Jekyll
     #  +categories+ is the list of categories to format.
     #
     # Returns string
-    def category_links(categories)
-      base_dir = @context.registers[:site].config['category_dir']
-      categories = categories.sort!.map do |category|
-        category_dir = GenerateCategories.category_dir(base_dir, category)
-        # Make sure the category directory begins with a slash.
-        category_dir = "/#{category_dir}" unless category_dir =~ /^\//
-        "<a class='category' href='#{category_dir}/'>#{category}</a>"
-      end
+    #def category_links(categories)
+      #base_dir = @context.registers[:site].config['category_dir']
+      #categories = categories.sort!.map do |category|
+        #category_dir = GenerateCategories.category_dir(base_dir, category)
+        ## Make sure the category directory begins with a slash.
+        #category_dir = "/#{category_dir}" unless category_dir =~ /^\//
+        #"<a class='category' href='#{category_dir}/'>#{category}</a>"
+      #end
 
-      case categories.length
-      when 0
-        ""
-      when 1
-        categories[0].to_s
-      else
-        categories.join(', ')
-      end
-    end
+      #case categories.length
+      #when 0
+        #""
+      #when 1
+        #categories[0].to_s
+      #else
+        #categories.join(', ')
+      #end
+    #end
 
     # Outputs the post.date as formatted html, with hooks for CSS styling.
     #
@@ -238,3 +239,4 @@ module Jekyll
   end
 
 end
+
